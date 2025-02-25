@@ -1,7 +1,9 @@
 
 # HyperCategory Framework for Neural Weight Space Analysis
 
-This project implements a novel framework that combines topological data analysis and category theory to analyze neural network weight spaces. In particular, it constructs a Vietoris–Rips complex over the weights of a designated layer, maps the resulting simplices into a learned context space using a Transformer-based encoder, and then applies a hypercategorical composition along with a contrastive regularizer. The framework not only trains a model on a given task (MNIST classification in this example) but also provides extensive visualization and textual summaries of the learned hypercategory structure.
+We aim to combine topological data analysis and category theory to analyze neural network weight spaces. In particular, it constructs a Vietoris–Rips complex over the weights of a designated layer, maps the resulting simplices into a learned context space using a Transformer-based encoder, and then we apply a hypercategorical composition along with a contrastive regularizer.
+
+The framework is currently a demostrative sample of how to train a simple Conv2D net along and provide visualization and textual summaries of the learned hypercategory structure.
 
 ## Table of Contents
 
@@ -28,7 +30,8 @@ This project implements a novel framework that combines topological data analysi
 
 ## Overview
 
-The **HyperCategory Framework** aims to bridge the gap between symbolic, categorical reasoning and deep learning by providing a structured analysis of a neural network's weight space. The project:
+**HyperCategory** aims to bridge the gap between symbolic, categorical reasoning and deep learning by providing a structured analysis of a neural network's weight space. The project:
+
 - Builds a Vietoris–Rips complex from the weights of a selected layer.
 - Maps simplices (0–, 1–, and 2–simplices) into a learned context space using a Transformer-based encoder.
 - Applies a hypercategorical composition law that fuses context embeddings.
@@ -54,16 +57,8 @@ Deep neural networks are powerful but often function as "black boxes." By analyz
   - **t-SNE of Context Embeddings:** Projects high-dimensional context embeddings into 2D.
   - **VR Complex Graph:** Visualizes the Vietoris–Rips complex as a graph, with nodes representing filters and edges for pairs.
   - **Filter Visualizations:** Displays the raw filter weights as images.
-- **Hypercategory Summary:** Generates a textual summary that enumerates the objects (0–simplices), hyperedges (1– and 2–simplices), and provides a naive composition interpretation.
+- **Hypercategory Summary:** Generates a textual summary that enumerates the objects (0–simplices), hyperedges (1– and 2–simplices) for layer interpretation
 - **Data Saving:** Model checkpoints, visualizations, and hypercategory summaries are saved locally for later review.
-
-## Installation and Requirements
-
-Ensure you have Python 3.6+ and install the required packages. You can install dependencies using pip:
-
-```bash
-pip install torch torchvision matplotlib scikit-learn networkx
-```
 
 ## Usage
 
