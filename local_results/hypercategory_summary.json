@@ -1,0 +1,12 @@
+{
+  "conv1": {
+    "num_filters": 16,
+    "num_1simplices": 0,
+    "num_2simplices": 0
+  },
+  "conv2": {
+    "num_filters": 32,
+    "num_1simplices": 0,
+    "num_2simplices": 0
+  }
+}

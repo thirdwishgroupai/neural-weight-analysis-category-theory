@@ -1,0 +1,9 @@
+=== Hypercategory Summary ===
+Number of base objects (filters) = 16
+Objects (0–simplices): filters 0..N-1
+
+Number of 1–simplices (pairs) = 0
+
+Number of 2–simplices (triplets) = 0
+
+=== Naive Compositional Overlaps ===
