@@ -74,7 +74,7 @@ The main training loop is included in the script. It uses the MNIST dataset for 
 To run training:
 
 ```bash
-python your_script.py
+python train.py
 ```
 
 The code will automatically:
